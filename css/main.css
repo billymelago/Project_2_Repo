@@ -39,8 +39,22 @@ ol {
 }
 
 #mainNav {
+    
+    display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+    
+    display: -webkit-box;
+    
+    display: -ms-flexbox;
+    
     display: flex;
+    -webkit-flex-flow: nowrap column;
+    -ms-flex-flow: nowrap column;
     flex-flow: nowrap column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -55,8 +69,22 @@ ol {
     }
 
 .navItems {
+    
+    display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+    
+    display: -webkit-box;
+    
+    display: -ms-flexbox;
+    
     display: flex;
+    -webkit-flex-flow: wrap column;
+    -ms-flex-flow: wrap column;
     flex-flow: wrap column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
     width: 100%;
     margin: 0 auto 40px;
@@ -77,8 +105,23 @@ ol {
     width: 100%;
     background-color: whitesmoke;
     margin: 0;
+    
+    display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+    
+    display: -webkit-box;
+    
+    display: -ms-flexbox;
+    
     display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
     border-top: solid thin darkgrey;
 }
@@ -162,6 +205,7 @@ h3 {
     line-height: 1.5;
     letter-spacing: 1px;
     font-weight: 700;
+    -webkit-transition: all .6s;
     transition: all .6s;
 }
 
@@ -201,6 +245,7 @@ h3 {
     padding: 10px;
     border-bottom: thin solid #669999;
     opacity: 1;
+    -webkit-transition: all .4s;
     transition: all .4s;
 }
 
@@ -309,9 +354,26 @@ h3 {
             /************************ PORTFOLIO PAGE ************************/
 #portfolioWrapper {
     padding: 0 15px 90px;
+    
+    display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+    
+    display: -webkit-box;
+    
+    display: -ms-flexbox;
+    
     display: flex;
+    -webkit-flex-flow: nowrap column;
+    -ms-flex-flow: nowrap column;
     flex-flow: nowrap column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
     text-align: center;
     background: darkgrey;
@@ -341,8 +403,22 @@ h3 {
     
     
     .navItems {
+        
+    display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+        
+    display: -webkit-box;
+        
+    display: -ms-flexbox;
+        
     display: flex;
+    -webkit-flex-flow: nowrap row;
+    -ms-flex-flow: nowrap row;
     flex-flow: nowrap row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
         margin: 0;
 }
@@ -354,38 +430,62 @@ h3 {
     }
     
     .studentSection {
+        
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        
+        display: -webkit-box;
+        
+        display: -ms-flexbox;
+        
         display: flex;
+        -webkit-flex-flow: nowrap row-reverse;
+        -ms-flex-flow: nowrap row-reverse;
         flex-flow: nowrap row-reverse;
-        align-content: center;
-        align-items:center;
-        margin: auto;
-        height: 100vh;
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        padding: 0;
     }
     
     .studentDescript {
-        max-width: 530px;
-        font-size: 1.35em;
-        text-align: right;
-        margin: auto;
-        padding: 0 12px;
+        max-width: ;
+        font-size: 1.3em;
+        text-align: left;
+        padding: 0 0 0 15px;
     }
     
     .studentPic {
-        min-width: 380px;
-        margin: auto;
-        padding:0;
+        max-width: 380px;
+        padding: 12px;
+        border: none;
     }
     
     .mainItems {
+        
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+
+        display: -webkit-box;
+
+        display: -ms-flexbox;
+
         display: flex;
+        -webkit-flex-flow: wrap row;
+        -ms-flex-flow: wrap row;
         flex-flow: wrap row;
-        justify-content: space-around;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between; 
     }
     
     .item {
-        width: 45%;
-        margin-top: 80px;
-        font-size: 1.3em;
+        width: 50%;
+        font-size: 1em;
         font-weight: lighter;
     }
     
@@ -401,8 +501,22 @@ h3 {
     
     .mainContact {
         line-height: 2;
+        
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+
+        display: -webkit-box;
+
+        display: -ms-flexbox;
+
         display: flex;
+        -webkit-flex-flow: column;
+        -ms-flex-flow: column;
         flex-flow: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
         justify-content: center;
         max-width: 1280px;
         padding: 0 50px;
@@ -436,6 +550,9 @@ h3 {
     
     .footerNav,
     .footerNav a {
+        display:-webkit-inline-box;
+        display:-webkit-inline-flex;
+        display:-ms-inline-flexbox;
         display:inline-flex;
         margin: 0 15px;
     }
@@ -454,7 +571,18 @@ h3 {
     }
     
     .portfolioItems {
+        
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+
+        display: -webkit-box;
+
+        display: -ms-flexbox;
+
         display: flex;
+        -webkit-flex-flow: wrap row;
+        -ms-flex-flow: wrap row;
         flex-flow: wrap row;
         margin:auto;
         padding: 0;
@@ -471,11 +599,25 @@ h3 {
     }
     
     .challengeContent {
+        
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+
+        display: -webkit-box;
+
+        display: -ms-flexbox;
+
         display: flex;
+        -webkit-flex-flow: wrap row;
+        -ms-flex-flow: wrap row;
         flex-flow: wrap row;
     }
     
     .portfolioChallenge {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
         flex: 1;
         margin: 5px;
         padding: 5px;
@@ -488,14 +630,30 @@ h3 {
 
 @media only screen and (min-width: 1024px) {
     
+    
+    
     #mainNav {
         position: fixed;
         width: 100%;
         top: 0;
         left: 0;
         margin: 0;
+        
+    display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+        
+        display: -webkit-box;
+        
+        display: -ms-flexbox;
+        
         display: flex;
+        -webkit-flex-flow: nowrap row;
+        -ms-flex-flow: nowrap row;
         flex-flow: nowrap row;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
         justify-content: space-between;
         background-color: whitesmoke;
         z-index: 999;
@@ -503,7 +661,7 @@ h3 {
     
     .studentName {
         width: 100%;
-        padding-left: 20px;
+        padding-left: 30px;
     }
     
     .studentName a {
@@ -512,72 +670,74 @@ h3 {
     }
     
     .navItems {
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
         justify-content: flex-end;
         padding: 10px;
         margin: 20px;
     }
     
     #mainWrapper {
-        max-width: 1800px;
+        max-width: 1024px;
         margin: auto;
-    }
-    
-    #mainHeader,
-    .mainContact {
-        position: relative;
-        height: 100vh;
-        padding: 0 90px;
     }
     
     
     .studentSection {
+        -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
         justify-content: space-around;
-        flex-flow: wrap row-reverse;
-        align-items: center;
-        margin: auto;
+        -webkit-flex-flow: nowrap row-reverse;
+        -ms-flex-flow: nowrap row-reverse;
+        flex-flow: nowrap row-reverse;
+        margin: 30px auto 0;
+        padding: 90px 0 0;
+        max-width: 1024px;
     }
     
     .studentDescript {
-        font-size: 2.2em;
-        max-width: 800px;
+        font-size: 1.2em;
+        max-width: 50%;
         padding: 0;
-        margin: 0;
-        text-align: center;
-    }
-    
-    .studentPic {
-       min-width: 450px;
-        margin: auto;
-        padding: 0;
+        text-align: left;
     }
     
     
     .item {
         width: 30%;
+        padding: 30px 0 ;
     }
     
     .mainContact {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-flex-flow: column;
+        -ms-flex-flow: column;
         flex-flow: column;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
         justify-content: space-between;
-        max-width: 1280px;
-        padding: 0 50px 50px;
+        max-width: 1024px;
+        padding: 60px 30px;
         margin: auto;
         
     }
     
-    #contact {
-        margin: 60px 0 0 0;
-    }
     
     .contactLinks{
-        font-size: 2em;
+        font-size: 1.5em;
         font-weight: 700;
         background-color: white;
+        border-radius: 10px;
+        margin-bottom: 20px;
     }
     
     .mainContact p {
-        font-size: 2em;
+        font-size: 1.5em;
     }
     
                 /************************ PORTFOLIO PAGE ************************/
@@ -599,13 +759,15 @@ h3 {
     }
     
     .portfolioItems {
+        -webkit-flex-flow: wrap row;
+        -ms-flex-flow: wrap row;
         flex-flow: wrap row;
         padding: 0 ;
         margin: auto;
         text-align: left;
         line-height: 1.8;
-        font-size: 1.5em;
-        letter-spacing: 2px;
+        font-size: 1.10em;
+        letter-spacing: 1.3px;
     }
     
 } /* END @MIN-WIDTH1024 */
