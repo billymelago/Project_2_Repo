@@ -457,7 +457,7 @@ h3 {
     }
     
     .studentPic {
-        max-width: 380px;
+        min-width: 380px;
         padding: 12px;
         border: none;
     }
@@ -690,6 +690,11 @@ h3 {
         -webkit-flex-flow: nowrap row-reverse;
         -ms-flex-flow: nowrap row-reverse;
         flex-flow: nowrap row-reverse;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        -ms-grid-row-align: center;
+        align-items: center;
         margin: 30px auto 0;
         padding: 90px 0 0;
         max-width: 1024px;
@@ -699,7 +704,16 @@ h3 {
         font-size: 1.2em;
         max-width: 50%;
         padding: 0;
-        text-align: left;
+    }
+    
+    .studentDescript p {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .studentPic {
+        margin-right: 0;
+        padding: 0;
     }
     
     
